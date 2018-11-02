@@ -58,6 +58,20 @@
     li{
         margin-bottom: 1.36364em;
     }
+
+    .social {
+        font-size: 1.1em;
+        margin-top: 10px; 
+    }
+
+    i{
+        opacity:0.25;
+    }
+    i:hover {
+        color: white;
+        opacity:1;
+    }
+
     a:hover{
         color: white;
         background-color: red;
