@@ -1,0 +1,71 @@
+    body, html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8;
+      font-family: "Courier New", Courier, Monaco;
+      color: white;
+    }
+    
+    .bgimg-1, .bgimg-2 {
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+    }
+    .bgimg-1 {
+      background-image: url("background.jpg");
+      height: 100%;
+    }
+    
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+            
+    }
+    
+    .caption span.border {
+      font-family: 'Press Start 2P', cursive;
+      color: white;
+      padding: 18px;
+      font-size:18px;
+      
+    }
+    
+    #time{
+        font-size: 0.6875em;
+        margin: 1em;
+    }
+
+    .center-nav{
+         font-size: 0.75em;
+         position: absolute;
+         left: 0;
+         margin-top: 5%;
+         top: 45%;
+         width: 100%;
+         text-align: center;
+         color:white;
+         
+    }
+    ul {
+        list-style: none;
+        padding: 0 2px;
+    }
+    li{
+        margin-bottom: 1.36364em;
+    }
+    a:hover{
+        color: white;
+        background-color: red;
+        text-decoration: none;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
