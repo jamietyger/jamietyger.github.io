@@ -1,42 +1,335 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="index.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jamie Southgate</title>
 
-    <body onload="startTime()">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
-        <div class="bgimg-1">
-          <div class="caption">
-            <span class="border">jamietyger</span><br>
-            <div id="time"></div>
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#home">
+            <p class="title is-4">
+                jamie.
+              </p>
+        </a>
+    
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+                <a href="#projects" class="button is-dark is-rounded">projects</a>
+                <a class="button is-dark is-rounded">resume</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    </nav>
+
+  <section class="hero is-fullheight-with-navbar main-hero" id="home">
+    <div class="hero-body">
+      <div class="container">
+        <strong>
+          <p class="sub-title">
+            hello.
+          </p>
+        </strong>
+
+        <p class="title">
+          my name is jamie.
+        </p>
+
+        <div class="socialmedia">
+          <span class="icon is-medium ">
+            <i class="fa-2x fab fa-linkedin-in"></i>
+          </span>
+
+          <span class="icon is-large">
+            <i class="fa-2x fab fa-twitter"></i>
+          </span>
+          <span class="icon is-large">
+            <i class="fa-2x fab fa-github"></i>
+          </span>
+          <span class="icon is-large">
+            <i class="fa-2x far fa-envelope"></i>
+          </span>
+        </div>
+        <div>
+          <br>
+          <a href="#projects" class="button is-dark is-rounded">projects</a>
+          <a class="button is-dark is-rounded">resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+
+    <div class="container">
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">jamie // etc</p>
+              <p class="title">about</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+
+            <p class="text">I'm a masters student at the South African National Bioinformatics Institute, with a
+              background in Computer Science. <br>My expertise is in python, java and web development. </p>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+
+  </section>
+
+  <section class="section" style="background-color:#323232; color:white;">
+    <div class="container">
+
+      <div class="container">
+        <nav class="level">
+          <div class="level-item has-text-centered" style="color:white">
+            <div>
+              <strong>
+                <p class="heading" style="color:white">travel.</p>
+              </strong>
+              <br>
+              <br>
+            </div>
           </div>
           
-          <div class="center-nav">
-            <nav>
-             <ul>
-                        <li><a href="https://github.com/jamietyger?tab=repositories"><span>projects</span></a></li>
 
-                        <li><a href=""><span>about</span></a></li>
+        </nav>
+      </div>
+      <div class="has-text-centered">
+        <img src="images/hairpin-small.JPG" alt="Girl in a jacket">
+      </div>
+      <div class="container" style="color: black">
 
-                        <li><a href=""><span>contact</span></a></li>
-                </ul>
-                <div class= "social" style="margin-top: 3em;">
-                <a href="https://www.linkedin.com/in/jamie-southgate-372a9ab8"><i class="fab fa-linkedin fa-lg"></i></a>
-                <a href="https://www.instagram.com/jamietyger"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="https://github.com/jamietyger"><i class="fab fa-github-square fa-lg"></i></a>
+        <br>
+        <div class="has-text-centered">
+          <strong style="color:white; font-style: italic;">
+            <p>"It is better to see something once than to hear about it a thousand times."</p>
+          </strong>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+
+
+
+      <div class="container">
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">jamie // etc</p>
+                <p class="title">projects</p>
               </div>
-            </nav>
+            </div>
+          </div>
+          
+            <div class="level-item">
+  
+              
+                        
+                        
+              
+            </div>
+          
             
 
+        </nav>
+
+        <div class="columns is-multiline">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+                <div class="box project-box has-equal-height" >
+                    <div class="card-content">
+                        <p class="title is-4">
+                          Establishing the framework for an African Genome Archive
+                        </p>
+                        <p class="subtitle is-6">
+                          Masters Thesis
+                        </p>
+                      </div>
+                      <footer class="card-footer">
+                        <p class="card-footer-item">
+                          <span>
+                            View code on <a href="">Github</a>
+                          </span>
+                        </p>
+                        <p class="card-footer-item">
+                          <span>
+                            View paper <a href="#">here</a>
+                          </span>
+                        </p>
+                      </footer>
+                  
+                  </div>
+                
+            </div>
+    
+         
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+                <div class="box project-box has-equal-height" >
+                    <div class="card-content">
+                        <p class="title is-4">
+                          Facemoji
+                        </p>
+                        <p class="subtitle is-6">
+                          Multi-person facial regonition and emoji classification
+                        </p>
+                      </div>
+                      <footer class="card-footer">
+                        <p class="card-footer-item">
+                          <span>
+                            View code on <a href="https://github.com/jamietyger/facemoji">Github</a>
+                          </span>
+                        </p>
+   
+                      </footer>
+                  
+                  </div>
+                
+            </div>
+         
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+                <div class="box project-box has-equal-height" >
+                    <div class="card-content">
+                        <p class="title is-4">
+                            Food Classification to provide
+                            Nutritional Information
+                            
+                        </p>
+                        <p class="subtitle is-6">
+                          Honours Thesis
+                        </p>
+                      </div>
+                      <footer class="card-footer">
+                        <p class="card-footer-item">
+                          <span>
+                            Code avaliable soon
+                          </span>
+                        </p>
+                        <p class="card-footer-item">
+                          <span>
+                            Paper avaliable soon
+                          </span>
+                        </p>
+                      </footer>
+                  
+                  </div>
+                
+            </div>
+         
+
+                   
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+                <div class="box project-box has-equal-height" >
+                    <div class="card-content">
+                        <p class="title is-4">
+                          ZumaBot
+                        </p>
+                        <p class="subtitle is-6">
+                          Slack Bot
+                        </p>
+                      </div>
+                      <footer class="card-footer">
+                        <p class="card-footer-item">
+                          <span>
+                            View code on <a href="">Github</a>
+                          </span>
+                        </p>
+                        <p class="card-footer-item">
+                          <span>
+                            View paper <a href="#">here</a>
+                          </span>
+                        </p>
+                      </footer>
+                  
+                  </div>
+                
+            </div>
+
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+                <div class="box project-box has-equal-height" >
+                    <div class="card-content">
+                        <p class="title is-4">
+                          iRods Ansible deployment
+                        </p>
+                        <p class="subtitle is-6">
+                          Ansible Code
+                        </p>
+                      </div>
+                      <footer class="card-footer">
+                        <p class="card-footer-item">
+                          <span>
+                            View code on <a href="">Github</a>
+                          </span>
+                        </p>
+                      </footer>
+                  
+                  </div>
+                
+            </div>
+
+
+          
+
+
+          </div>
+
+      </div>
+
+      
     </div>
 
 
+  </section>
 
-        </div>
-        
-        </body>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+</body>
 </html>
-

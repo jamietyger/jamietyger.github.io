@@ -1,30 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
 
-function startTime() {
-    var date = new Date();
-    offset = '+2'
-    var utc = date.getTime() + (date.getTimezoneOffset() * 60000);
-    nd = new Date(utc + (3600000*offset));
-
-    var d = nd.toLocaleString("en-GB").split(',')[0];
-    var h = nd.getHours();
-    var m = nd.getMinutes();
-    var s = nd.getSeconds();
-    var t = isAm(h);
-    m = checkTime(m);
-    h = checkTime(h);
-
-    document.getElementById('time').innerHTML = d+" "+ h + ":" + m + ":" + t + " CPT";
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-
-function isAm(i){
-    var t = "pm"
-    if(i<12){
-        t= "am"
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+  
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+  
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
     }
-    return t
-}
+  
+  });

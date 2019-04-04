@@ -1,84 +1,59 @@
-    body, html {
-      height: 100%;
-      margin: 0;
-      font: 400 15px/1.8;
-      font-family: "Courier New", Courier, Monaco;
-      color: white;
-    }
-    
-    .bgimg-1, .bgimg-2 {
-      position: relative;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    
-    }
-    .bgimg-1 {
-      background-image: url("background.jpg");
-      height: 100%;
-    }
-    
-    .caption {
-      position: absolute;
-      left: 0;
-      top: 40%;
-      width: 100%;
-      text-align: center;
-            
-    }
-    
-    .caption span.border {
-      font-family: 'Press Start 2P', cursive;
-      color: white;
-      padding: 18px;
-      font-size:18px;
-      
-    }
-    
-    #time{
-        font-size: 0.6875em;
-        margin: 1em;
-    }
+body {
+  font-family: 'Noto Sans';
+ 
+}
 
-    .center-nav{
-         font-size: 0.75em;
-         position: absolute;
-         left: 0;
-         margin-top: 5%;
-         top: 45%;
-         width: 100%;
-         text-align: center;
-         color:white;
-         
-    }
-    ul {
-        list-style: none;
-        padding: 0 2px;
-    }
-    li{
-        margin-bottom: 1.36364em;
-    }
+.main-hero  {
+background-color: #efeded;
 
-    .social {
-        font-size: 1.1em;
-    }
 
-    i{
-        opacity:0.25;
-    }
-    i:hover {
-        color: white;
-        opacity:1;
-    }
+}
 
-    a:hover{
-        color: white;
-        background-color: red;
-        text-decoration: none;
-    }
-    
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    
+.text-white{
+  color: white;
+}
+
+.back-hero{
+  background: url(images/sacalobra.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.box{
+  padding-bottom: 0px;
+}
+
+.footer{
+  background-color: #323232;
+  color:white;
+}
+
+a.button.is-dark.is-rounded:hover {
+  background: #e76000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.heading{
+  text-transform: lowercase;
+  font-size: 1rem;
+}
+
+
+.has-equal-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.has-equal-height .card-footer {
+  margin-top: auto;
+}
+
+.navbar-brand .navbar-item{
+    padding-left: 25px;
+} 
