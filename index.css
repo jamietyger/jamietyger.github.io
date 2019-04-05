@@ -57,3 +57,11 @@ html {
 .navbar-brand .navbar-item{
     padding-left: 25px;
 } 
+
+.icon:hover {
+  color: #e76000;
+}
+
+.icon{
+  color: inherit;
+}
